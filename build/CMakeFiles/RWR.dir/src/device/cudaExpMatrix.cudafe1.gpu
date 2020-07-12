@@ -1,0 +1,1361 @@
+typedef char __nv_bool;
+# 2214 "/opt/cuda/include/driver_types.h"
+struct CUstream_st;
+# 2219 "/opt/cuda/include/driver_types.h"
+struct CUevent_st;
+# 28 "/usr/include/bits/types/__locale_t.h" 3
+struct __locale_struct;
+# 18 "/home/luca/@focus/RWR-GPU/RWR/include/host/graph.h"
+struct Graph;
+# 40 "/home/luca/@focus/RWR-GPU/RWR/include/host/graph.h"
+struct GraphCSR;
+# 8 "/home/luca/@focus/RWR-GPU/RWR/include/host/expMatrix.h"
+struct ExpMatrix;
+# 13 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+enum Kernel {
+# 14 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+K1,
+# 15 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+K3,
+# 16 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+K3_5};
+# 19 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+struct cudaExpMatrix;
+# 158 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_string.h" 3
+enum _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEUt_E {
+# 158 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_string.h" 3
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE17_S_local_capacityE = 15};
+# 71 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/stringfwd.h" 3
+struct _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE;
+# 158 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_string.h" 3
+enum _ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEUt_E {
+# 158 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_string.h" 3
+_ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE17_S_local_capacityE = 3};
+# 158 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_string.h" 3
+enum _ZNSt7__cxx1112basic_stringIDsSt11char_traitsIDsESaIDsEEUt_E {
+# 158 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_string.h" 3
+_ZNSt7__cxx1112basic_stringIDsSt11char_traitsIDsESaIDsEE17_S_local_capacityE = 7};
+# 158 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_string.h" 3
+enum _ZNSt7__cxx1112basic_stringIDiSt11char_traitsIDiESaIDiEEUt_E {
+# 158 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_string.h" 3
+_ZNSt7__cxx1112basic_stringIDiSt11char_traitsIDiESaIDiEE17_S_local_capacityE = 3};
+# 302 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/chrono" 3
+struct _ZNSt6chrono8durationIfSt5ratioILl1ELl1000EEEE;
+# 207 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/chrono" 3
+struct _ZNSt6chrono23treat_as_floating_pointIfEE;
+# 121 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/chrono" 3
+struct _ZNSt6chrono20__duration_cast_implINS_8durationIfSt5ratioILl1ELl1000EEEES2_ILl1ELl1EEfLb1ELb1EEE;
+# 277 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/char_traits.h" 3
+struct _ZSt11char_traitsIcE;
+# 64 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/memoryfwd.h" 3
+struct _ZSaIcE;
+# 371 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_classes.h" 3
+struct _ZNSt6locale5facetE;
+# 371 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_classes.h" 3
+struct __SO__NSt6locale5facetE;
+# 522 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_classes.h" 3
+struct _ZNSt6locale5_ImplE;
+# 62 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_classes.h" 3
+struct _ZSt6locale;
+# 57 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+enum _ZSt13_Ios_Fmtflags {
+# 59 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt12_S_boolalpha = 1,
+# 60 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt6_S_dec,
+# 61 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt8_S_fixed = 4,
+# 62 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt6_S_hex = 8,
+# 63 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt11_S_internal = 16,
+# 64 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt7_S_left = 32,
+# 65 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt6_S_oct = 64,
+# 66 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt8_S_right = 128,
+# 67 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt13_S_scientific = 256,
+# 68 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt11_S_showbase = 512,
+# 69 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt12_S_showpoint = 1024,
+# 70 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt10_S_showpos = 2048,
+# 71 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt9_S_skipws = 4096,
+# 72 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt10_S_unitbuf = 8192,
+# 73 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt12_S_uppercase = 16384,
+# 74 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt14_S_adjustfield = 176,
+# 75 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt12_S_basefield = 74,
+# 76 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt13_S_floatfield = 260,
+# 77 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt19_S_ios_fmtflags_end = 65536,
+# 78 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt19_S_ios_fmtflags_max = 2147483647,
+# 79 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt19_S_ios_fmtflags_min = (-2147483647-1)};
+# 111 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+enum _ZSt13_Ios_Openmode {
+# 113 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt6_S_app = 1,
+# 114 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt6_S_ate,
+# 115 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt6_S_bin = 4,
+# 116 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt5_S_in = 8,
+# 117 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt6_S_out = 16,
+# 118 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt8_S_trunc = 32,
+# 119 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt19_S_ios_openmode_end = 65536,
+# 120 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt19_S_ios_openmode_max = 2147483647,
+# 121 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt19_S_ios_openmode_min = (-2147483647-1)};
+# 153 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+enum _ZSt12_Ios_Iostate {
+# 155 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt10_S_goodbit,
+# 156 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt9_S_badbit,
+# 157 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt9_S_eofbit,
+# 158 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt10_S_failbit = 4,
+# 159 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt18_S_ios_iostate_end = 65536,
+# 160 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt18_S_ios_iostate_max = 2147483647,
+# 161 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt18_S_ios_iostate_min = (-2147483647-1)};
+# 193 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+enum _ZSt12_Ios_Seekdir {
+# 195 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt6_S_beg,
+# 196 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt6_S_cur,
+# 197 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt6_S_end,
+# 198 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt18_S_ios_seekdir_end = 65536};
+# 530 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+struct _ZNSt8ios_base14_Callback_listE;
+# 569 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+struct _ZNSt8ios_base6_WordsE;
+# 581 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+enum _ZNSt8ios_baseUt_E {
+# 581 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZNSt8ios_base18_S_local_word_sizeE = 8};
+# 603 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+struct _ZNSt8ios_base4InitE;
+# 228 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+struct _ZSt8ios_base;
+# 125 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/iosfwd" 3
+struct _ZSt19istreambuf_iteratorIcSt11char_traitsIcEE;
+# 128 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/iosfwd" 3
+struct _ZSt19ostreambuf_iteratorIcSt11char_traitsIcEE;
+# 80 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/iosfwd" 3
+struct _ZSt15basic_streambufIcSt11char_traitsIcEE;
+# 41 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/x86_64-pc-linux-gnu/bits/ctype_base.h" 3
+struct _ZSt10ctype_base;
+# 681 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+struct _ZSt5ctypeIcE;
+# 1551 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+enum _ZNSt10__num_baseUt_E {
+# 1552 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base9_S_ominusE,
+# 1553 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base8_S_oplusE,
+# 1554 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base5_S_oxE,
+# 1555 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base5_S_oXE,
+# 1556 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base10_S_odigitsE,
+# 1557 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base14_S_odigits_endE = 20,
+# 1558 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base11_S_oudigitsE = 20,
+# 1559 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base15_S_oudigits_endE = 36,
+# 1560 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base5_S_oeE = 18,
+# 1561 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base5_S_oEE = 34,
+# 1562 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base7_S_oendE = 36};
+# 1577 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+enum _ZNSt10__num_baseUt0_E {
+# 1578 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base9_S_iminusE,
+# 1579 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base8_S_iplusE,
+# 1580 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base5_S_ixE,
+# 1581 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base5_S_iXE,
+# 1582 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base8_S_izeroE,
+# 1583 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base5_S_ieE = 18,
+# 1584 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base5_S_iEE = 24,
+# 1585 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10__num_base7_S_iendE = 26};
+# 1952 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+struct _ZSt7num_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE;
+# 2293 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+struct _ZSt7num_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE;
+# 77 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/iosfwd" 3
+struct _ZSt9basic_iosIcSt11char_traitsIcEE;
+# 86 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/iosfwd" 3
+struct _ZSo;
+# 55 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets_nonio.h" 3
+enum _ZNSt9time_base9dateorderE {
+# 55 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets_nonio.h" 3
+_ZNSt9time_base8no_orderE,
+# 55 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets_nonio.h" 3
+_ZNSt9time_base3dmyE,
+# 55 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets_nonio.h" 3
+_ZNSt9time_base3mdyE,
+# 55 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets_nonio.h" 3
+_ZNSt9time_base3ymdE,
+# 55 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets_nonio.h" 3
+_ZNSt9time_base3ydmE};
+# 937 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets_nonio.h" 3
+enum _ZNSt10money_baseUt_E {
+# 938 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets_nonio.h" 3
+_ZNSt10money_base8_S_minusE,
+# 939 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets_nonio.h" 3
+_ZNSt10money_base7_S_zeroE,
+# 940 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets_nonio.h" 3
+_ZNSt10money_base6_S_endE = 11};
+# 49 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/codecvt.h" 3
+enum _ZNSt12codecvt_base6resultE {
+# 51 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/codecvt.h" 3
+_ZNSt12codecvt_base2okE,
+# 52 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/codecvt.h" 3
+_ZNSt12codecvt_base7partialE,
+# 53 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/codecvt.h" 3
+_ZNSt12codecvt_base5errorE,
+# 54 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/codecvt.h" 3
+_ZNSt12codecvt_base6noconvE};
+# 46 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/uses_allocator.h" 3
+struct _ZSt15allocator_arg_t;
+# 185 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/iomanip" 3
+struct _ZSt13_Setprecision;
+# 263 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/ratio" 3
+struct _ZSt5ratioILl1ELl1EE;
+# 263 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/ratio" 3
+struct _ZSt5ratioILl1ELl1000EE;
+# 181 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/type_traits" 3
+struct _ZSt14__success_typeIfE;
+# 263 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/ratio" 3
+struct _ZSt5ratioILl1000ELl1EE;
+# 286 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/ratio" 3
+struct _ZSt16__ratio_multiplyISt5ratioILl1ELl1000EES0_ILl1000ELl1EEE;
+# 316 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/ratio" 3
+struct _ZSt14__ratio_divideISt5ratioILl1ELl1000EES1_E;
+# 181 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/type_traits" 3
+struct _ZSt14__success_typeINSt6chrono8durationIfSt5ratioILl1ELl1000EEEEE;
+# 1913 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/type_traits" 3
+struct _ZSt9enable_ifILb1ENSt6chrono8durationIfSt5ratioILl1ELl1000EEEEE;
+# 53 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+enum _ZN4xlib5ColorE {
+# 53 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+_ZN4xlib5Color10FG_DEFAULTE};
+# 96 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+struct _ZN5timer6detail9TimerBaseILNS_10timer_typeE3ENSt6chrono8durationIfSt5ratioILl1ELl1000EEEEEE;
+# 80 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+enum _ZN5timer10timer_typeE {
+# 80 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+_ZN5timer4HOSTE,
+# 81 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+_ZN5timer3CPUE,
+# 83 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+_ZN5timer3SYSE,
+# 85 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+_ZN5timer6DEVICEE};
+# 202 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+struct _ZN5timer5TimerILNS_10timer_typeE3ENSt6chrono8durationIfSt5ratioILl1ELl1000EEEEEE;
+# 216 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/stddef.h" 3
+typedef unsigned long size_t;
+#include "crt/device_runtime.h"
+# 42 "/usr/include/bits/types/__locale_t.h" 3
+typedef struct __locale_struct *__locale_t;
+# 72 "/usr/include/bits/types.h" 3
+typedef long __intmax_t;
+# 73 "/usr/include/bits/types.h" 3
+typedef unsigned long __uintmax_t;
+# 101 "/usr/include/stdint.h" 3
+typedef __intmax_t intmax_t;
+# 102 "/usr/include/stdint.h" 3
+typedef __uintmax_t uintmax_t;
+# 32 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/x86_64-pc-linux-gnu/bits/atomic_word.h" 3
+typedef int _Atomic_word;
+# 18 "/home/luca/@focus/RWR-GPU/RWR/include/host/graph.h"
+struct Graph { const long *__vptr;
+# 20 "/home/luca/@focus/RWR-GPU/RWR/include/host/graph.h"
+int V;
+# 20 "/home/luca/@focus/RWR-GPU/RWR/include/host/graph.h"
+int E;
+# 20 "/home/luca/@focus/RWR-GPU/RWR/include/host/graph.h"
+int nnz;
+# 21 "/home/luca/@focus/RWR-GPU/RWR/include/host/graph.h"
+int *degree;};
+# 40 "/home/luca/@focus/RWR-GPU/RWR/include/host/graph.h"
+struct GraphCSR { struct Graph __b_5Graph;
+# 43 "/home/luca/@focus/RWR-GPU/RWR/include/host/graph.h"
+struct int2 *COO_Edges;
+# 44 "/home/luca/@focus/RWR-GPU/RWR/include/host/graph.h"
+int *nodes;
+# 44 "/home/luca/@focus/RWR-GPU/RWR/include/host/graph.h"
+int *edges;
+# 45 "/home/luca/@focus/RWR-GPU/RWR/include/host/graph.h"
+float *prob;};
+# 8 "/home/luca/@focus/RWR-GPU/RWR/include/host/expMatrix.h"
+struct ExpMatrix {
+# 17 "/home/luca/@focus/RWR-GPU/RWR/include/host/expMatrix.h"
+int N;
+# 18 "/home/luca/@focus/RWR-GPU/RWR/include/host/expMatrix.h"
+int M;
+# 20 "/home/luca/@focus/RWR-GPU/RWR/include/host/expMatrix.h"
+double *eMatrix;};
+# 19 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+struct cudaExpMatrix {
+# 20 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+struct GraphCSR graph;
+# 22 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+int *devNodes;
+# 22 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+int *devEdges;
+# 22 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+int *devDegrees;
+# 23 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+int *devF;
+# 25 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+double *devExpVec1;
+# 25 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+double *devExpVec2;
+# 25 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+double *devExpVec0;
+# 27 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+int V;
+# 27 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+int E;
+# 28 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+int M;
+# 29 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+int allocFrontierSize;
+# 32 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+struct ExpMatrix expMatrix;
+# 33 "/home/luca/@focus/RWR-GPU/RWR/include/device/cudaExpMatrix.cuh"
+int *devInF;};
+# 239 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/x86_64-pc-linux-gnu/bits/c++config.h" 3
+typedef long _ZSt9ptrdiff_t;
+# 488 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/chrono" 3
+typedef struct _ZNSt6chrono8durationIfSt5ratioILl1ELl1000EEEE _ZZNSt6chronomlIfSt5ratioILl1ELl1000EEfEENS_8durationINSt9enable_ifIXsr3std14is_convertibleIRKT1_NSt11common_typeIJT_S5_EE4typeEEE5valueESB_E4typeET0_EERKNS3_IS9_SE_EES7_E4__cd;
+# 182 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/type_traits" 3
+typedef struct _ZNSt6chrono8durationIfSt5ratioILl1ELl1000EEEE _ZNSt14__success_typeINSt6chrono8durationIfSt5ratioILl1ELl1000EEEEE4typeE;
+# 564 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/chrono" 3
+typedef _ZNSt14__success_typeINSt6chrono8durationIfSt5ratioILl1ELl1000EEEEE4typeE _ZZNSt6chronoltIfSt5ratioILl1ELl1000EEfS2_EEbRKNS_8durationIT_T0_EERKNS3_IT1_T2_EEE4__ct;
+# 74 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/stringfwd.h" 3
+typedef struct _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE _ZNSt7__cxx116stringE;
+# 238 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/x86_64-pc-linux-gnu/bits/c++config.h" 3
+typedef unsigned long _ZSt6size_t;
+# 315 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/chrono" 3
+typedef float _ZNSt6chrono8durationIfSt5ratioILl1ELl1000EEE3repE;
+# 535 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/ratio" 3
+typedef struct _ZSt5ratioILl1ELl1000EE _ZSt5milli;
+# 316 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/chrono" 3
+typedef _ZSt5milli _ZNSt6chrono8durationIfSt5ratioILl1ELl1000EEE6periodE;
+# 306 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/chrono" 3
+typedef struct _ZNSt6chrono23treat_as_floating_pointIfEE _ZNSt6chrono8durationIfSt5ratioILl1ELl1000EEE10__is_floatIfEE;
+# 302 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/chrono" 3
+struct _ZNSt6chrono8durationIfSt5ratioILl1ELl1000EEEE {
+# 445 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/chrono" 3
+_ZNSt6chrono8durationIfSt5ratioILl1ELl1000EEE3repE __r;};
+# 69 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+typedef struct _ZNSt6chrono8durationIfSt5ratioILl1ELl1000EEEE _ZN5timer5milliE;
+# 1919 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/type_traits" 3
+typedef _ZN5timer5milliE _ZNSt9enable_ifILb1ENSt6chrono8durationIfSt5ratioILl1ELl1000EEEEE4typeE;
+# 183 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/chrono" 3
+typedef _ZNSt9enable_ifILb1ENSt6chrono8durationIfSt5ratioILl1ELl1000EEEEE4typeE _ZNSt6chrono23__enable_if_is_durationINS_8durationIfSt5ratioILl1ELl1000EEEEEE;
+# 121 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/chrono" 3
+struct _ZNSt6chrono20__duration_cast_implINS_8durationIfSt5ratioILl1ELl1000EEEES2_ILl1ELl1EEfLb1ELb1EEE {};
+# 141 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/chrono" 3
+typedef _ZNSt6chrono8durationIfSt5ratioILl1ELl1000EEE3repE _ZZNSt6chrono20__duration_cast_implINS_8durationIfSt5ratioILl1ELl1000EEEES2_ILl1ELl1EEfLb1ELb1EE6__castIfS3_EES4_RKNS1_IT_T0_EEE8__to_rep;
+# 98 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/postypes.h" 3
+typedef _ZSt9ptrdiff_t _ZSt10streamsize;
+# 141 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/iosfwd" 3
+typedef struct _ZSo _ZSt7ostream;
+# 279 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/char_traits.h" 3
+typedef char _ZNSt11char_traitsIcE9char_typeE;
+# 277 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/char_traits.h" 3
+struct _ZSt11char_traitsIcE {};
+# 62 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/x86_64-pc-linux-gnu/bits/c++locale.h" 3
+typedef __locale_t _ZSt10__c_locale;
+# 371 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_classes.h" 3
+struct _ZNSt6locale5facetE { const long *__vptr;
+# 377 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_classes.h" 3
+_Atomic_word _M_refcount;char __nv_no_debug_dummy_end_padding_0[4];};
+# 371 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_classes.h" 3
+struct __SO__NSt6locale5facetE { const long *__vptr;
+# 377 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_classes.h" 3
+_Atomic_word _M_refcount;};
+# 62 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_classes.h" 3
+struct _ZSt6locale {
+# 309 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_classes.h" 3
+struct _ZNSt6locale5_ImplE *_M_impl;};
+# 323 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+typedef enum _ZSt13_Ios_Fmtflags _ZNSt8ios_base8fmtflagsE;
+# 398 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+typedef enum _ZSt12_Ios_Iostate _ZNSt8ios_base7iostateE;
+# 461 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+typedef enum _ZSt12_Ios_Seekdir _ZNSt8ios_base7seekdirE;
+# 569 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+struct _ZNSt8ios_base6_WordsE {
+# 571 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+void *_M_pword;
+# 572 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+long _M_iword;};
+# 603 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+struct _ZNSt8ios_base4InitE {};
+# 228 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+struct _ZSt8ios_base { const long *__vptr;
+# 522 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt10streamsize _M_precision;
+# 523 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZSt10streamsize _M_width;
+# 524 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZNSt8ios_base8fmtflagsE _M_flags;
+# 525 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZNSt8ios_base7iostateE _M_exception;
+# 526 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+_ZNSt8ios_base7iostateE _M_streambuf_state;
+# 560 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+struct _ZNSt8ios_base14_Callback_listE *_M_callbacks;
+# 577 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+struct _ZNSt8ios_base6_WordsE _M_word_zero;
+# 582 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+struct _ZNSt8ios_base6_WordsE _M_local_word[8];
+# 585 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+int _M_word_size;
+# 586 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+struct _ZNSt8ios_base6_WordsE *_M_word;
+# 592 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/ios_base.h" 3
+struct _ZSt6locale _M_ios_locale;};
+# 131 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/streambuf" 3
+typedef char _ZNSt15basic_streambufIcSt11char_traitsIcEE9char_typeE;
+# 132 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/streambuf" 3
+typedef struct _ZSt11char_traitsIcE _ZNSt15basic_streambufIcSt11char_traitsIcEE11traits_typeE;
+# 80 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/iosfwd" 3
+struct _ZSt15basic_streambufIcSt11char_traitsIcEE { const long *__vptr;
+# 191 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/streambuf" 3
+_ZNSt15basic_streambufIcSt11char_traitsIcEE9char_typeE *_M_in_beg;
+# 192 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/streambuf" 3
+_ZNSt15basic_streambufIcSt11char_traitsIcEE9char_typeE *_M_in_cur;
+# 193 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/streambuf" 3
+_ZNSt15basic_streambufIcSt11char_traitsIcEE9char_typeE *_M_in_end;
+# 194 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/streambuf" 3
+_ZNSt15basic_streambufIcSt11char_traitsIcEE9char_typeE *_M_out_beg;
+# 195 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/streambuf" 3
+_ZNSt15basic_streambufIcSt11char_traitsIcEE9char_typeE *_M_out_cur;
+# 196 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/streambuf" 3
+_ZNSt15basic_streambufIcSt11char_traitsIcEE9char_typeE *_M_out_end;
+# 199 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/streambuf" 3
+struct _ZSt6locale _M_buf_locale;};
+# 44 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/x86_64-pc-linux-gnu/bits/ctype_base.h" 3
+typedef const int *_ZNSt10ctype_base9__to_typeE;
+# 48 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/x86_64-pc-linux-gnu/bits/ctype_base.h" 3
+typedef unsigned short _ZNSt10ctype_base4maskE;
+# 41 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/x86_64-pc-linux-gnu/bits/ctype_base.h" 3
+struct _ZSt10ctype_base {};
+# 686 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+typedef char _ZNSt5ctypeIcE9char_typeE;
+# 681 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+struct _ZSt5ctypeIcE {  const long *__b_NSt6locale5facetE___vptr;
+# 377 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_classes.h" 3
+_Atomic_word __b_NSt6locale5facetE__M_refcount;
+# 690 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZSt10__c_locale _M_c_locale_ctype;
+# 691 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+__nv_bool _M_del;
+# 692 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10ctype_base9__to_typeE _M_toupper;
+# 693 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+_ZNSt10ctype_base9__to_typeE _M_tolower;
+# 694 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+const _ZNSt10ctype_base4maskE *_M_table;
+# 695 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+char _M_widen_ok;
+# 696 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+char _M_widen[256];
+# 697 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+char _M_narrow[256];
+# 698 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/locale_facets.h" 3
+char _M_narrow_ok;char __nv_no_debug_dummy_end_padding_0[6];};
+# 76 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_ios.h" 3
+typedef char _ZNSt9basic_iosIcSt11char_traitsIcEE9char_typeE;
+# 87 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_ios.h" 3
+typedef struct _ZSt5ctypeIcE _ZNSt9basic_iosIcSt11char_traitsIcEE12__ctype_typeE;
+# 89 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_ios.h" 3
+typedef struct _ZSt7num_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE _ZNSt9basic_iosIcSt11char_traitsIcEE14__num_put_typeE;
+# 91 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_ios.h" 3
+typedef struct _ZSt7num_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE _ZNSt9basic_iosIcSt11char_traitsIcEE14__num_get_typeE;
+# 77 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/iosfwd" 3
+struct _ZSt9basic_iosIcSt11char_traitsIcEE { struct _ZSt8ios_base __b_St8ios_base;
+# 96 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_ios.h" 3
+struct _ZSo *_M_tie;
+# 97 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_ios.h" 3
+_ZNSt9basic_iosIcSt11char_traitsIcEE9char_typeE _M_fill;
+# 98 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_ios.h" 3
+__nv_bool _M_fill_init;
+# 99 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_ios.h" 3
+struct _ZSt15basic_streambufIcSt11char_traitsIcEE *_M_streambuf;
+# 102 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_ios.h" 3
+const _ZNSt9basic_iosIcSt11char_traitsIcEE12__ctype_typeE *_M_ctype;
+# 104 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_ios.h" 3
+const _ZNSt9basic_iosIcSt11char_traitsIcEE14__num_put_typeE *_M_num_put;
+# 106 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/basic_ios.h" 3
+const _ZNSt9basic_iosIcSt11char_traitsIcEE14__num_get_typeE *_M_num_get;};
+# 62 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/ostream" 3
+typedef char _ZNSo9char_typeE;
+# 71 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/ostream" 3
+typedef struct _ZSo _ZNSo14__ostream_typeE;
+# 86 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/iosfwd" 3
+struct _ZSo { const long *__vptr; struct _ZSt9basic_iosIcSt11char_traitsIcEE __v_St9basic_iosIcSt11char_traitsIcEE;};
+# 46 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/bits/uses_allocator.h" 3
+struct _ZSt15allocator_arg_t {};
+# 185 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/iomanip" 3
+struct _ZSt13_Setprecision {
+# 185 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/iomanip" 3
+int _M_n;};
+# 182 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/type_traits" 3
+typedef float _ZNSt14__success_typeIfE4typeE;
+# 181 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/type_traits" 3
+struct _ZSt14__success_typeIfE {};
+# 299 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/ratio" 3
+typedef struct _ZSt5ratioILl1ELl1EE _ZNSt16__ratio_multiplyISt5ratioILl1ELl1000EES0_ILl1000ELl1EEE4typeE;
+# 286 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/ratio" 3
+struct _ZSt16__ratio_multiplyISt5ratioILl1ELl1000EES0_ILl1000ELl1EEE {};
+# 322 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/ratio" 3
+typedef _ZNSt16__ratio_multiplyISt5ratioILl1ELl1000EES0_ILl1000ELl1EEE4typeE _ZNSt14__ratio_divideISt5ratioILl1ELl1000EES1_E4typeE;
+# 316 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/ratio" 3
+struct _ZSt14__ratio_divideISt5ratioILl1ELl1000EES1_E {};
+# 181 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/type_traits" 3
+struct _ZSt14__success_typeINSt6chrono8durationIfSt5ratioILl1ELl1000EEEEE {};
+# 1913 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/type_traits" 3
+struct _ZSt9enable_ifILb1ENSt6chrono8durationIfSt5ratioILl1ELl1000EEEEE {};
+# 336 "/usr/lib/gcc/x86_64-pc-linux-gnu/8.4.0/include/c++/ratio" 3
+typedef _ZNSt14__ratio_divideISt5ratioILl1ELl1000EES1_E4typeE _ZSt12ratio_divideISt5ratioILl1ELl1000EES1_E;
+# 96 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+struct _ZN5timer6detail9TimerBaseILNS_10timer_typeE3ENSt6chrono8durationIfSt5ratioILl1ELl1000EEEEEE { const long *__vptr;
+# 179 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+_ZN5timer5milliE _time_elapsed;
+# 180 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+int _space;
+# 181 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+int _decimals;
+# 182 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+enum _ZN4xlib5ColorE _default_color;
+# 183 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+__nv_bool _start_flag;
+# 191 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+_ZN5timer5milliE _time_squared;
+# 192 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+_ZN5timer5milliE _total_time_elapsed;
+# 193 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+_ZN5timer5milliE _time_min;
+# 194 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+_ZN5timer5milliE _time_max;
+# 195 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+int _num_executions;};
+# 202 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.hpp"
+struct _ZN5timer5TimerILNS_10timer_typeE3ENSt6chrono8durationIfSt5ratioILl1ELl1000EEEEEE { struct _ZN5timer6detail9TimerBaseILNS_10timer_typeE3ENSt6chrono8durationIfSt5ratioILl1ELl1000EEEEEE __b_N5timer6detail9TimerBaseILNS_10timer_typeE3ENSt6chrono8durationIfSt5ratioILl1ELl1000EEEEEE;
+# 61 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.cuh"
+struct CUevent_st *_start_event;
+# 61 "/home/luca/@focus/RWR-GPU/RWR/util/Timer.cuh"
+struct CUevent_st *_stop_event;};
+# 242 "/opt/cuda/include/crt/common_functions.h"
+___device__(extern  __no_sc__) __attribute__((__externally_visible__)) __attribute__((__nothrow__)) __attribute__((visibility("default"))) void _ZdlPv(void *);
+# 241 "/opt/cuda/include/crt/common_functions.h"
+___device__(extern  __no_sc__) __attribute__((__externally_visible__)) __attribute__((visibility("default"))) void *_Znam(_ZSt6size_t);
+#if !defined(__CUDABE__)
+#endif
+# 127 "/opt/cuda/include/cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) enum cudaError cudaDeviceSynchronize(void);
+# 128 "/opt/cuda/include/cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) enum cudaError cudaGetLastError(void);
+# 130 "/opt/cuda/include/cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) const char *cudaGetErrorString(enum cudaError);
+# 139 "/opt/cuda/include/cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) enum cudaError cudaEventRecord(struct CUevent_st *, struct CUstream_st *);
+# 141 "/opt/cuda/include/cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) enum cudaError cudaEventDestroy(struct CUevent_st *);
+# 143 "/opt/cuda/include/cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) enum cudaError cudaFree(void *);
+# 144 "/opt/cuda/include/cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) enum cudaError cudaMalloc(void **, size_t);
+# 145 "/opt/cuda/include/cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) enum cudaError cudaMemcpyAsync(void *, const void *, size_t, enum cudaMemcpyKind, struct CUstream_st *);
+# 151 "/opt/cuda/include/cuda_device_runtime_api.h"
+___device__(extern  __no_sc__) enum cudaError cudaMemsetAsync(void *, int, size_t, struct CUstream_st *);
+#if !defined(__CUDABE__)
+# 289 "/opt/cuda/include/crt/math_functions.h"
+ __device_builtin__ ___device__(extern  __no_sc__) int min(int, int);
+#endif
+#if !defined(__CUDABE__)
+# 167 "/opt/cuda/include/crt/device_functions.h"
+ __device_builtin__ ___device__(extern  __no_sc__) void __syncthreads(void);
+#endif
+#if !defined(__CUDABE__)
+# 78 "/opt/cuda/include/device_atomic_functions.h"
+ __device_builtin__ ___device__(extern  __no_sc__) int __iAtomicAdd(int *, int);
+#endif
+#if !defined(__CUDABE__)
+# 95 "/opt/cuda/include/device_atomic_functions.h"
+ __device_builtin__ ___device__(extern  __no_sc__) int __iAtomicCAS(int *, int, int);
+#endif
+# 75 "/opt/cuda/include/device_atomic_functions.hpp"
+___device__(static  __no_sc__) __inline__ int _ZN43_INTERNAL_21_cudaExpMatrix_cpp1_ii_9c0dc9239atomicAddEPii(int *, int);
+# 170 "/opt/cuda/include/device_atomic_functions.hpp"
+___device__(static  __no_sc__) __inline__ int _ZN43_INTERNAL_21_cudaExpMatrix_cpp1_ii_9c0dc9239atomicCASEPiii(int *, int, int);
+#if !defined(__CUDABE__)
+# 83 "/opt/cuda/include/sm_60_atomic_functions.h"
+ __device_builtin__ ___device__(extern  __no_sc__) double __dAtomicAdd(double *, double);
+#endif
+# 77 "/opt/cuda/include/sm_60_atomic_functions.hpp"
+___device__(static  __no_sc__) __inline__ double _ZN43_INTERNAL_21_cudaExpMatrix_cpp1_ii_9c0dc9239atomicAddEPdd(double *, double);
+# 3296 "/opt/cuda/include/crt/device_functions.h"
+___device__(extern  __no_sc__) unsigned __cudaPushCallConfiguration(struct dim3, struct dim3, size_t, struct CUstream_st *);
+# 601 "/opt/cuda/include/cuda_runtime.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN43_INTERNAL_21_cudaExpMatrix_cpp1_ii_9c0dc92310cudaMallocIdEE9cudaErrorPPT_m(double **, size_t);
+# 601 "/opt/cuda/include/cuda_runtime.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN43_INTERNAL_21_cudaExpMatrix_cpp1_ii_9c0dc92310cudaMallocIiEE9cudaErrorPPT_m(int **, size_t);
+# 7 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+__global__ __var_used__ extern void _Z24matrixTransposeKernelShMPKdPdii(const double *, double *, int, int);
+# 6 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+__global__ __var_used__ extern void _Z8RWR_initPdPiidS0_(double *__restrict__, int *__restrict__, const int, const double, int *);
+# 20 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+__global__ __var_used__ extern void _Z8RWR_CUDAPiS_S_S_PdS0_iS_(int *__restrict__, int *__restrict__, int *__restrict__, int *__restrict__, double *__restrict__, double *__restrict__, const int, int *);
+# 50 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+__global__ __var_used__ extern void _Z7RWR_mulPdS_S_Piid(double *__restrict__, double *__restrict__, double *__restrict__, int *__restrict__, const int, const double);
+# 3 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+__global__ __var_used__ extern void _Z9RWR_init3Pddi(double *__restrict__, const double, const int);
+# 12 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+__global__ __var_used__ extern void _Z9RWR_CUDA3PiS_S_PdS0_S0_dii(int *__restrict__, int *__restrict__, int *__restrict__, double *__restrict__, double *__restrict__, double *__restrict__, const double, const int, const int);
+# 6 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+__global__ __var_used__ extern void _Z9RWR_init4Pddi(double *__restrict__, const double, const int);
+# 16 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+__global__ __var_used__ extern void _Z9RWR_CUDA4PiS_S_PdS0_S0_dii(int *__restrict__, int *__restrict__, int *__restrict__, double *__restrict__, double *__restrict__, double *__restrict__, const double, const int, const int);
+# 7 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+__global__ __var_used__ extern void _Z9RWR_init5Pddi(double *__restrict__, const double, const int);
+# 17 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+__global__ __var_used__ extern void _Z9RWR_CUDA5PiS_S_PdS0_S0_diii(int *__restrict__, int *__restrict__, int *__restrict__, double *__restrict__, double *__restrict__, double *__restrict__, const double, const int, const int, const int);
+# 421 "/opt/cuda/include/vector_types.h"
+___device__(extern  __no_sc__) __inline__ void _ZN4dim3C1Ejjj(struct dim3 *const, unsigned, unsigned, unsigned);
+___device__(extern  __no_sc__) __inline__ void _ZN4dim3C2Ejjj(struct dim3 *const, unsigned, unsigned, unsigned);
+extern  __device__  __var_used__ const long _ZTV5Graph[4];
+extern  __device__  __var_used__ const long _ZTV8GraphCSR[4];
+# 11 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+static  __shared__  __var_used__ int _ZZ24matrixTransposeKernelShMPKdPdiiE9sh_matrix[1024];
+# 3 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+ __device__  __var_used__ int counter;
+extern  __device__  __var_used__ const long _ZTVN5timer6detail9TimerBaseILNS_10timer_typeE3ENSt6chrono8durationIfSt5ratioILl1ELl1000EEEEEE[16];
+extern  __device__  __var_used__ const long _ZTVN5timer5TimerILNS_10timer_typeE3ENSt6chrono8durationIfSt5ratioILl1ELl1000EEEEEE[16];
+# 28 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+static  __shared__  __var_used__ double _ZZ9RWR_CUDA5PiS_S_PdS0_S0_diiiE8vec1SMem[2288];
+# 29 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+static  __shared__  __var_used__ double _ZZ9RWR_CUDA5PiS_S_PdS0_S0_diiiE8vec2SMem[2288];
+#include "common_functions.h"
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const long _ZTV5Graph[4] = {0L,0L,0L,0L};
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const long _ZTV8GraphCSR[4] = {0L,0L,0L,0L};
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const long _ZTVN5timer6detail9TimerBaseILNS_10timer_typeE3ENSt6chrono8durationIfSt5ratioILl1ELl1000EEEEEE[16] = {0L,0L,0L,0L,0L,0L,0L,0L,0L,0L,0L,0L,0L,0L,0L,0L};
+ __attribute__((nv_weak_odr))  __device__  __var_used__ const long _ZTVN5timer5TimerILNS_10timer_typeE3ENSt6chrono8durationIfSt5ratioILl1ELl1000EEEEEE[16] = {0L,0L,0L,0L,0L,0L,0L,0L,0L,0L,0L,0L,0L,0L,0L,0L};
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+#if !defined(__CUDABE__)
+#endif
+# 75 "/opt/cuda/include/device_atomic_functions.hpp"
+___device__(static  __no_sc__) __inline__ int _ZN43_INTERNAL_21_cudaExpMatrix_cpp1_ii_9c0dc9239atomicAddEPii(
+# 75 "/opt/cuda/include/device_atomic_functions.hpp"
+int *address, 
+# 75 "/opt/cuda/include/device_atomic_functions.hpp"
+int val){
+# 76 "/opt/cuda/include/device_atomic_functions.hpp"
+{
+# 77 "/opt/cuda/include/device_atomic_functions.hpp"
+return __iAtomicAdd(address, val);
+# 78 "/opt/cuda/include/device_atomic_functions.hpp"
+}}
+# 170 "/opt/cuda/include/device_atomic_functions.hpp"
+___device__(static  __no_sc__) __inline__ int _ZN43_INTERNAL_21_cudaExpMatrix_cpp1_ii_9c0dc9239atomicCASEPiii(
+# 170 "/opt/cuda/include/device_atomic_functions.hpp"
+int *address, 
+# 170 "/opt/cuda/include/device_atomic_functions.hpp"
+int compare, 
+# 170 "/opt/cuda/include/device_atomic_functions.hpp"
+int val){
+# 171 "/opt/cuda/include/device_atomic_functions.hpp"
+{
+# 172 "/opt/cuda/include/device_atomic_functions.hpp"
+return __iAtomicCAS(address, compare, val);
+# 173 "/opt/cuda/include/device_atomic_functions.hpp"
+}}
+#if !defined(__CUDABE__)
+#endif
+# 77 "/opt/cuda/include/sm_60_atomic_functions.hpp"
+___device__(static  __no_sc__) __inline__ double _ZN43_INTERNAL_21_cudaExpMatrix_cpp1_ii_9c0dc9239atomicAddEPdd(
+# 77 "/opt/cuda/include/sm_60_atomic_functions.hpp"
+double *address, 
+# 77 "/opt/cuda/include/sm_60_atomic_functions.hpp"
+double val){
+# 78 "/opt/cuda/include/sm_60_atomic_functions.hpp"
+{
+# 79 "/opt/cuda/include/sm_60_atomic_functions.hpp"
+return __dAtomicAdd(address, val);
+# 80 "/opt/cuda/include/sm_60_atomic_functions.hpp"
+}}
+# 601 "/opt/cuda/include/cuda_runtime.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN43_INTERNAL_21_cudaExpMatrix_cpp1_ii_9c0dc92310cudaMallocIdEE9cudaErrorPPT_m(
+# 602 "/opt/cuda/include/cuda_runtime.h"
+double **devPtr, 
+# 603 "/opt/cuda/include/cuda_runtime.h"
+size_t size){
+# 605 "/opt/cuda/include/cuda_runtime.h"
+{
+# 606 "/opt/cuda/include/cuda_runtime.h"
+return cudaMalloc(((void **)((void *)devPtr)), size);
+# 607 "/opt/cuda/include/cuda_runtime.h"
+}}
+# 601 "/opt/cuda/include/cuda_runtime.h"
+___device__(static  __no_sc__) __inline__ enum cudaError _ZN43_INTERNAL_21_cudaExpMatrix_cpp1_ii_9c0dc92310cudaMallocIiEE9cudaErrorPPT_m(
+# 602 "/opt/cuda/include/cuda_runtime.h"
+int **devPtr, 
+# 603 "/opt/cuda/include/cuda_runtime.h"
+size_t size){
+# 605 "/opt/cuda/include/cuda_runtime.h"
+{
+# 606 "/opt/cuda/include/cuda_runtime.h"
+return cudaMalloc(((void **)((void *)devPtr)), size);
+# 607 "/opt/cuda/include/cuda_runtime.h"
+}}
+# 7 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+__global__ __var_used__ void _Z24matrixTransposeKernelShMPKdPdii(
+# 7 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+const double *d_matrix_in, 
+# 8 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+double *d_matrix_out, 
+# 9 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+int N, 
+# 9 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+int M){
+# 9 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+{
+# 13 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+ int __cuda_local_var_66863_9_non_const_x;
+# 14 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+ int __cuda_local_var_66864_9_non_const_y;
+# 13 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+__cuda_local_var_66863_9_non_const_x = ((int)(((blockIdx.x) * (blockDim.x)) + (threadIdx.x)));
+# 14 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+__cuda_local_var_66864_9_non_const_y = ((int)(((blockIdx.y) * (blockDim.y)) + (threadIdx.y)));
+# 16 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+if ((__cuda_local_var_66863_9_non_const_x < N) && (__cuda_local_var_66864_9_non_const_y < M))
+# 16 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+{
+# 17 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+((_ZZ24matrixTransposeKernelShMPKdPdiiE9sh_matrix)[((threadIdx.x) + ((threadIdx.y) * 32U))]) = ((int)(d_matrix_in[((__cuda_local_var_66863_9_non_const_x * M) + __cuda_local_var_66864_9_non_const_y)]));
+# 19 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+__syncthreads();
+# 20 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+(d_matrix_out[((__cuda_local_var_66864_9_non_const_y * N) + __cuda_local_var_66863_9_non_const_x)]) = ((double)((_ZZ24matrixTransposeKernelShMPKdPdiiE9sh_matrix)[((threadIdx.x) + ((threadIdx.y) * 32U))]));
+# 21 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+} 
+# 22 "/home/luca/@focus/RWR-GPU/RWR/src/device/util/cuda_transpose.cu"
+}}
+# 6 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+__global__ __var_used__ void _Z8RWR_initPdPiidS0_(
+# 6 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+double *__restrict__ devExpVec0, 
+# 7 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+int *__restrict__ devF, 
+# 8 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+const int devFSize, 
+# 9 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+const double r, 
+# 10 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+int *devInF){
+# 10 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+{
+# 11 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+ int __cuda_local_var_66924_9_non_const_id;
+# 11 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+__cuda_local_var_66924_9_non_const_id = ((int)((threadIdx.x) + ((blockIdx.x) * (blockDim.x))));
+# 12 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+if (__cuda_local_var_66924_9_non_const_id < devFSize)
+# 12 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+{
+# 13 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+ int __cuda_local_var_66926_13_non_const_v;
+# 13 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+__cuda_local_var_66926_13_non_const_v = (devF[__cuda_local_var_66924_9_non_const_id]);
+# 14 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+(devInF[__cuda_local_var_66926_13_non_const_v]) = 1;
+# 15 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+(devExpVec0[__cuda_local_var_66926_13_non_const_v]) *= r;
+# 16 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+} 
+# 17 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+}}
+# 20 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+__global__ __var_used__ void _Z8RWR_CUDAPiS_S_S_PdS0_iS_(
+# 20 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+int *__restrict__ devNodes, 
+# 21 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+int *__restrict__ devEdges, 
+# 22 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+int *__restrict__ devDegrees, 
+# 23 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+int *__restrict__ devF, 
+# 24 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+double *__restrict__ devExpVec1, 
+# 25 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+double *__restrict__ devExpVec2, 
+# 26 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+const int devFSize, 
+# 27 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+int *devInF){
+# 27 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+{
+# 29 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+ int __cuda_local_var_66942_9_non_const_id;
+# 29 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+__cuda_local_var_66942_9_non_const_id = ((int)((threadIdx.x) + ((blockIdx.x) * (blockDim.x))));
+# 30 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+if (__cuda_local_var_66942_9_non_const_id < devFSize)
+# 30 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+{
+# 31 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+ int __cuda_local_var_66944_13_non_const_localChecker;
+# 32 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+ int __cuda_local_var_66945_13_non_const_v;
+# 35 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+ double __cuda_local_var_66948_16_non_const_prop;
+# 32 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+__cuda_local_var_66945_13_non_const_v = (devF[__cuda_local_var_66942_9_non_const_id]);
+# 34 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+_ZN43_INTERNAL_21_cudaExpMatrix_cpp1_ii_9c0dc9239atomicAddEPdd((devExpVec2 + __cuda_local_var_66945_13_non_const_v), (-(devExpVec1[__cuda_local_var_66945_13_non_const_v])));
+# 35 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+__cuda_local_var_66948_16_non_const_prop = ( fdivide((devExpVec1[__cuda_local_var_66945_13_non_const_v]) , ((double)(devDegrees[__cuda_local_var_66945_13_non_const_v]))));
+# 36 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+{
+# 36 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+ int i;
+# 36 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+i = (devNodes[__cuda_local_var_66945_13_non_const_v]);
+# 36 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+for (; (i < (devNodes[(__cuda_local_var_66945_13_non_const_v + 1)])); ++i)
+# 36 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+{
+# 37 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+ int __cuda_local_var_66950_17_non_const_e;
+# 37 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+__cuda_local_var_66950_17_non_const_e = (devEdges[i]);
+# 39 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+_ZN43_INTERNAL_21_cudaExpMatrix_cpp1_ii_9c0dc9239atomicAddEPdd((devExpVec2 + __cuda_local_var_66950_17_non_const_e), __cuda_local_var_66948_16_non_const_prop);
+# 40 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+__cuda_local_var_66944_13_non_const_localChecker = (*((volatile int *)(devInF + __cuda_local_var_66950_17_non_const_e)));
+# 41 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+if (!(_ZN43_INTERNAL_21_cudaExpMatrix_cpp1_ii_9c0dc9239atomicCASEPiii((devInF + __cuda_local_var_66950_17_non_const_e), __cuda_local_var_66944_13_non_const_localChecker, 1)))
+# 41 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+{
+# 42 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+ int __cuda_local_var_66955_21_non_const_index;
+# 42 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+__cuda_local_var_66955_21_non_const_index = (_ZN43_INTERNAL_21_cudaExpMatrix_cpp1_ii_9c0dc9239atomicAddEPii((&counter), 1));
+# 43 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+(devF[__cuda_local_var_66955_21_non_const_index]) = __cuda_local_var_66950_17_non_const_e;
+# 44 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+}
+# 45 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+} }
+# 46 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+} 
+# 47 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+}}
+# 50 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+__global__ __var_used__ void _Z7RWR_mulPdS_S_Piid(
+# 50 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+double *__restrict__ devExpVec0, 
+# 51 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+double *__restrict__ devExpVec1, 
+# 52 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+double *__restrict__ devExpVec2, 
+# 53 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+int *__restrict__ devF, 
+# 54 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+const int devFSize, 
+# 55 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+const double r){
+# 55 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+{
+# 57 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+ int __cuda_local_var_66970_9_non_const_id;
+# 57 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+__cuda_local_var_66970_9_non_const_id = ((int)((threadIdx.x) + ((blockIdx.x) * (blockDim.x))));
+# 58 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+if (__cuda_local_var_66970_9_non_const_id < devFSize)
+# 58 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+{
+# 59 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+ int __cuda_local_var_66972_13_non_const_v;
+# 60 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+ double __cuda_local_var_66973_16_non_const_tmp;
+# 59 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+__cuda_local_var_66972_13_non_const_v = (devF[__cuda_local_var_66970_9_non_const_id]);
+# 60 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+__cuda_local_var_66973_16_non_const_tmp = (((devExpVec2[__cuda_local_var_66972_13_non_const_v]) * ((1.0) - r)) + (devExpVec0[__cuda_local_var_66972_13_non_const_v]));
+# 61 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+(devExpVec2[__cuda_local_var_66972_13_non_const_v]) = __cuda_local_var_66973_16_non_const_tmp;
+# 62 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+(devExpVec1[__cuda_local_var_66972_13_non_const_v]) = __cuda_local_var_66973_16_non_const_tmp;
+# 63 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+} 
+# 64 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel1.cu"
+}}
+# 3 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+__global__ __var_used__ void _Z9RWR_init3Pddi(
+# 3 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+double *__restrict__ devExpVec0, 
+# 4 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+const double r, 
+# 5 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+const int V){
+# 5 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+{
+# 6 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+ int __cuda_local_var_67080_15_non_const_id;
+# 6 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+__cuda_local_var_67080_15_non_const_id = ((int)((threadIdx.x) + ((blockIdx.x) * (blockDim.x))));
+# 7 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+if (__cuda_local_var_67080_15_non_const_id < V)
+# 7 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+{
+# 8 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+(devExpVec0[__cuda_local_var_67080_15_non_const_id]) *= r;
+# 9 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+} 
+# 10 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+}}
+# 12 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+__global__ __var_used__ void _Z9RWR_CUDA3PiS_S_PdS0_S0_dii(
+# 12 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+int *__restrict__ devNodes, 
+# 13 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+int *__restrict__ devEdges, 
+# 14 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+int *__restrict__ devDegrees, 
+# 15 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+double *__restrict__ devExpVec1, 
+# 16 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+double *__restrict__ devExpVec2, 
+# 17 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+double *__restrict__ devExpVec0, 
+# 18 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+const double r, 
+# 19 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+const int V, 
+# 20 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+const int VWARP_SZ){
+# 20 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+{
+# 22 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+ int __cuda_local_var_67096_15_non_const_id;
+# 23 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+ int __cuda_local_var_67097_15_non_const_stride;
+# 25 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+ int __cuda_local_var_67099_15_non_const_vid;
+# 26 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+ int __cuda_local_var_67100_15_non_const_mod;
+# 22 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+__cuda_local_var_67096_15_non_const_id = ((int)((threadIdx.x) + ((blockIdx.x) * (blockDim.x))));
+# 23 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+__cuda_local_var_67097_15_non_const_stride = ((int)(((blockDim.x) * (gridDim.x)) / ((unsigned)VWARP_SZ)));
+# 25 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+__cuda_local_var_67099_15_non_const_vid = (__cuda_local_var_67096_15_non_const_id / VWARP_SZ);
+# 26 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+__cuda_local_var_67100_15_non_const_mod = ((int)((threadIdx.x) & ((unsigned)(VWARP_SZ - 1))));
+# 27 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+{
+# 27 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+ int k;
+# 27 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+k = __cuda_local_var_67099_15_non_const_vid;
+# 27 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+for (; (k < V); k += __cuda_local_var_67097_15_non_const_stride)
+# 27 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+{
+# 28 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+ int __cuda_local_var_67102_19_non_const_start;
+# 29 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+ int __cuda_local_var_67103_19_non_const_end;
+# 30 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+ double __cuda_local_var_67104_16_non_const_sum;
+# 28 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+__cuda_local_var_67102_19_non_const_start = (devNodes[k]);
+# 29 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+__cuda_local_var_67103_19_non_const_end = (devNodes[(k + 1)]);
+# 30 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+__cuda_local_var_67104_16_non_const_sum = (0.0);
+# 31 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+(devExpVec2[k]) = (0.0);
+# 32 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+{
+# 32 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+ int i;
+# 32 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+i = (__cuda_local_var_67102_19_non_const_start + __cuda_local_var_67100_15_non_const_mod);
+# 32 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+for (; (i < __cuda_local_var_67103_19_non_const_end); i += VWARP_SZ)
+# 32 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+{
+# 33 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+ int __cuda_local_var_67107_23_non_const_e;
+# 33 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+__cuda_local_var_67107_23_non_const_e = (devEdges[i]);
+# 34 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+__cuda_local_var_67104_16_non_const_sum += ( fdivide((devExpVec1[__cuda_local_var_67107_23_non_const_e]) , ((double)(devDegrees[__cuda_local_var_67107_23_non_const_e]))));
+# 35 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+} }
+# 37 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+_ZN43_INTERNAL_21_cudaExpMatrix_cpp1_ii_9c0dc9239atomicAddEPdd((devExpVec2 + k), (__cuda_local_var_67104_16_non_const_sum * ((1.0) - r)));
+# 39 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+if (__cuda_local_var_67100_15_non_const_mod == 0) {
+# 40 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+(devExpVec2[k]) += (devExpVec0[k]); }
+# 42 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+} } 
+# 52 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel3.cu"
+}}
+# 6 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+__global__ __var_used__ void _Z9RWR_init4Pddi(
+# 6 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+double *__restrict__ devExpVec0, 
+# 7 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+const double r, 
+# 8 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+const int V){
+# 8 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+{
+# 9 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+ int __cuda_local_var_67193_15_non_const_id;
+# 10 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+ int __cuda_local_var_67194_15_non_const_stride;
+# 9 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+__cuda_local_var_67193_15_non_const_id = ((int)((threadIdx.x) + ((blockIdx.x) * ((unsigned)V))));
+# 10 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+__cuda_local_var_67194_15_non_const_stride = ((int)(blockDim.x));
+# 11 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+{
+# 11 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+ int i;
+# 11 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+i = __cuda_local_var_67193_15_non_const_id;
+# 11 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+for (; (((unsigned)i) < (((unsigned)V) * ((blockIdx.x) + 1U))); i += __cuda_local_var_67194_15_non_const_stride)
+# 11 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+{
+# 12 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+(devExpVec0[i]) *= r;
+# 13 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+} } 
+# 14 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+}}
+# 16 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+__global__ __var_used__ void _Z9RWR_CUDA4PiS_S_PdS0_S0_dii(
+# 16 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+int *__restrict__ devNodes, 
+# 17 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+int *__restrict__ devEdges, 
+# 18 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+int *__restrict__ devDegrees, 
+# 19 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+double *__restrict__ devExpVec1, 
+# 20 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+double *__restrict__ devExpVec2, 
+# 21 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+double *__restrict__ devExpVec0, 
+# 22 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+const double r, 
+# 23 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+const int V, 
+# 24 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+const int VWARP_SZ){
+# 24 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+{
+# 26 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+ int __cuda_local_var_67210_15_non_const_stride;
+# 28 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+ int __cuda_local_var_67212_15_non_const_vid;
+# 29 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+ int __cuda_local_var_67213_15_non_const_mod;
+# 30 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+ int __cuda_local_var_67214_15_non_const_offset;
+# 26 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+__cuda_local_var_67210_15_non_const_stride = ((int)((blockDim.x) / ((unsigned)VWARP_SZ)));
+# 28 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+__cuda_local_var_67212_15_non_const_vid = ((int)((threadIdx.x) / ((unsigned)VWARP_SZ)));
+# 29 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+__cuda_local_var_67213_15_non_const_mod = ((int)((threadIdx.x) & ((unsigned)(VWARP_SZ - 1))));
+# 30 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+__cuda_local_var_67214_15_non_const_offset = ((int)((blockIdx.x) * ((unsigned)V)));
+# 32 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+{
+# 32 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+ int k;
+# 32 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+ int m;
+# 32 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+k = __cuda_local_var_67212_15_non_const_vid;
+# 32 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+m = (__cuda_local_var_67212_15_non_const_vid + __cuda_local_var_67214_15_non_const_offset);
+# 32 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+for (; (k < V); (k += __cuda_local_var_67210_15_non_const_stride) , (void)(m += __cuda_local_var_67210_15_non_const_stride))
+# 32 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+{
+# 33 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+ int __cuda_local_var_67217_19_non_const_start;
+# 34 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+ int __cuda_local_var_67218_19_non_const_end;
+# 35 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+ double __cuda_local_var_67219_16_non_const_sum;
+# 33 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+__cuda_local_var_67217_19_non_const_start = (devNodes[k]);
+# 34 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+__cuda_local_var_67218_19_non_const_end = (devNodes[(k + 1)]);
+# 35 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+__cuda_local_var_67219_16_non_const_sum = (0.0);
+# 36 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+(devExpVec2[m]) = (0.0);
+# 37 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+{
+# 37 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+ int i;
+# 37 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+i = (__cuda_local_var_67217_19_non_const_start + __cuda_local_var_67213_15_non_const_mod);
+# 37 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+for (; (i < __cuda_local_var_67218_19_non_const_end); i += VWARP_SZ)
+# 37 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+{
+# 38 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+ int __cuda_local_var_67222_23_non_const_e;
+# 38 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+__cuda_local_var_67222_23_non_const_e = ((devEdges[i]) + __cuda_local_var_67214_15_non_const_offset);
+# 39 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+__cuda_local_var_67219_16_non_const_sum += ( fdivide((devExpVec1[__cuda_local_var_67222_23_non_const_e]) , ((double)(devDegrees[__cuda_local_var_67222_23_non_const_e]))));
+# 40 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+} }
+# 41 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+_ZN43_INTERNAL_21_cudaExpMatrix_cpp1_ii_9c0dc9239atomicAddEPdd((devExpVec2 + m), (__cuda_local_var_67219_16_non_const_sum * ((1.0) - r)));
+# 42 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+if (__cuda_local_var_67213_15_non_const_mod == 0) {
+# 43 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+(devExpVec2[m]) += (devExpVec0[m]); }
+# 44 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+} } 
+# 45 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel4.cu"
+}}
+# 7 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+__global__ __var_used__ void _Z9RWR_init5Pddi(
+# 7 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+double *__restrict__ devExpVec0, 
+# 8 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+const double r, 
+# 9 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+const int V){
+# 9 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+{
+# 10 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+ int __cuda_local_var_67317_15_non_const_id;
+# 11 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+ int __cuda_local_var_67318_15_non_const_stride;
+# 10 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+__cuda_local_var_67317_15_non_const_id = ((int)((threadIdx.x) + ((blockIdx.x) * ((unsigned)V))));
+# 11 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+__cuda_local_var_67318_15_non_const_stride = ((int)(blockDim.x));
+# 12 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+{
+# 12 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+ int i;
+# 12 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+i = __cuda_local_var_67317_15_non_const_id;
+# 12 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+for (; (((unsigned)i) < (((unsigned)V) * ((blockIdx.x) + 1U))); i += __cuda_local_var_67318_15_non_const_stride)
+# 12 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+{
+# 13 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+(devExpVec0[i]) *= r;
+# 14 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+} } 
+# 15 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+}}
+# 17 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+__global__ __var_used__ void _Z9RWR_CUDA5PiS_S_PdS0_S0_diii(
+# 17 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+int *__restrict__ devNodes, 
+# 18 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+int *__restrict__ devEdges, 
+# 19 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+int *__restrict__ devDegrees, 
+# 20 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+double *__restrict__ devExpVec1, 
+# 21 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+double *__restrict__ devExpVec2, 
+# 22 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+double *__restrict__ devExpVec0, 
+# 23 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+const double r, 
+# 24 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+const int V, 
+# 25 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+const int M, 
+# 26 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+const int VWARP_SZ){
+# 26 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+{
+# 31 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+ int __cuda_local_var_67338_15_non_const_vid;
+# 32 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+ int __cuda_local_var_67339_15_non_const_stride;
+# 33 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+ int __cuda_local_var_67340_15_non_const_mod;
+# 34 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+ int __cuda_local_var_67341_15_non_const_offset;
+# 31 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+__cuda_local_var_67338_15_non_const_vid = ((int)((threadIdx.x) / ((unsigned)VWARP_SZ)));
+# 32 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+__cuda_local_var_67339_15_non_const_stride = ((int)((blockDim.x) / ((unsigned)VWARP_SZ)));
+# 33 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+__cuda_local_var_67340_15_non_const_mod = ((int)((threadIdx.x) & ((unsigned)(VWARP_SZ - 1))));
+# 34 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+__cuda_local_var_67341_15_non_const_offset = ((int)((blockIdx.x) * ((unsigned)V)));
+# 36 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+if ((__cuda_local_var_67338_15_non_const_vid + __cuda_local_var_67341_15_non_const_offset) < (V * M))
+# 36 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+{
+# 37 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+{
+# 37 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+ int k;
+# 37 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+ int m;
+# 37 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+k = __cuda_local_var_67338_15_non_const_vid;
+# 37 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+m = (__cuda_local_var_67338_15_non_const_vid + __cuda_local_var_67341_15_non_const_offset);
+# 37 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+for (; (k < V); (k += __cuda_local_var_67339_15_non_const_stride) , (void)(m += __cuda_local_var_67339_15_non_const_stride))
+# 37 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+{
+# 38 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+((_ZZ9RWR_CUDA5PiS_S_PdS0_S0_diiiE8vec1SMem)[k]) = (devExpVec1[m]);
+# 39 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+} }
+# 40 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+__syncthreads();
+# 43 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+{
+# 43 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+ int k;
+# 43 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+ int m;
+# 43 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+k = __cuda_local_var_67338_15_non_const_vid;
+# 43 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+m = (__cuda_local_var_67338_15_non_const_vid + __cuda_local_var_67341_15_non_const_offset);
+# 43 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+for (; (k < V); (k += __cuda_local_var_67339_15_non_const_stride) , (void)(m += __cuda_local_var_67339_15_non_const_stride))
+# 43 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+{
+# 44 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+ int __cuda_local_var_67351_23_non_const_start;
+# 45 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+ int __cuda_local_var_67352_23_non_const_end;
+# 46 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+ double __cuda_local_var_67353_20_non_const_sum;
+# 44 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+__cuda_local_var_67351_23_non_const_start = (devNodes[k]);
+# 45 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+__cuda_local_var_67352_23_non_const_end = (devNodes[(k + 1)]);
+# 46 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+__cuda_local_var_67353_20_non_const_sum = (0.0);
+# 47 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+((_ZZ9RWR_CUDA5PiS_S_PdS0_S0_diiiE8vec2SMem)[k]) = (0.0);
+# 48 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+{
+# 48 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+ int i;
+# 48 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+i = (__cuda_local_var_67351_23_non_const_start + __cuda_local_var_67340_15_non_const_mod);
+# 48 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+for (; (i < __cuda_local_var_67352_23_non_const_end); i += VWARP_SZ)
+# 48 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+{
+# 49 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+ int __cuda_local_var_67356_27_non_const_e;
+# 49 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+__cuda_local_var_67356_27_non_const_e = (devEdges[i]);
+# 50 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+__cuda_local_var_67353_20_non_const_sum += ( fdivide(((_ZZ9RWR_CUDA5PiS_S_PdS0_S0_diiiE8vec1SMem)[__cuda_local_var_67356_27_non_const_e]) , ((double)(devDegrees[(__cuda_local_var_67356_27_non_const_e + __cuda_local_var_67341_15_non_const_offset)]))));
+# 51 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+} }
+# 52 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+_ZN43_INTERNAL_21_cudaExpMatrix_cpp1_ii_9c0dc9239atomicAddEPdd(((_ZZ9RWR_CUDA5PiS_S_PdS0_S0_diiiE8vec2SMem) + k), (__cuda_local_var_67353_20_non_const_sum * ((1.0) - r)));
+# 53 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+if (__cuda_local_var_67340_15_non_const_mod == 0) {
+# 54 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+(devExpVec2[m]) = (((_ZZ9RWR_CUDA5PiS_S_PdS0_S0_diiiE8vec2SMem)[k]) + (devExpVec0[m])); }
+# 55 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+} }
+# 56 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+} 
+# 57 "/home/luca/@focus/RWR-GPU/RWR/src/device/kernel/RWR_cuda_kernel5.cu"
+}}
+__asm__(".align 2");
+# 421 "/opt/cuda/include/vector_types.h"
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ void _ZN4dim3C1Ejjj( struct dim3 *const this, 
+# 421 "/opt/cuda/include/vector_types.h"
+unsigned vx, 
+# 421 "/opt/cuda/include/vector_types.h"
+unsigned vy, 
+# 421 "/opt/cuda/include/vector_types.h"
+unsigned vz){
+# 421 "/opt/cuda/include/vector_types.h"
+{
+# 421 "/opt/cuda/include/vector_types.h"
+(this->x) = vx;
+# 421 "/opt/cuda/include/vector_types.h"
+(this->y) = vy;
+# 421 "/opt/cuda/include/vector_types.h"
+(this->z) = vz; 
+# 421 "/opt/cuda/include/vector_types.h"
+}}
+__asm__(".align 2");
+ __attribute__((nv_linkonce_odr)) ___device__( __no_sc__) __inline__ void _ZN4dim3C2Ejjj( struct dim3 *const this,  unsigned __T33,  unsigned __T34,  unsigned __T35){ {  _ZN4dim3C1Ejjj(this, __T33, __T34, __T35);  }}
