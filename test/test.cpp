@@ -177,7 +177,6 @@ namespace Testing {
         //float densityGraph[] {0.01, 0.1, 0.2, 0.5, 0.7, 0.9};
         //double densityEM[] {0.01, 0.1, 0.2, 0.5, 0.7, 0.9};
         //int nof_nodes[] {1000, 2000, 5000, 10000, 20000};
-        std::cout << "x" << '\n';
         int nof_nodes[] {2000, 5000};
         float densityGraph[] {0.2};
         double densityEM[] {0.1};
