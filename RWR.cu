@@ -10,8 +10,30 @@
 #include "cudaExpMatrix.cuh"
 #include "test/test.h"
 
-int main() {
+int main(int argc, char* argv[]) {
 
+    std::string errString(
+	"Syntax Error:\nRWR <graph_path> <expression_matrix_path>\n  or  \nRWR -T      do test on a random graph");
+
+	if (argc < 2){
+        error(errString);
+    }
+    else if (argc < 3){
+		std::string parameter = argv[1];
+		if (parameter.compare("-T") == 0)
+            Testing::multipleTest(Kernel::K3_5);
+        else 
+            error(errString);
+
+        return 0;
+    }
+    else if (argc < 4){
+        int stop_step = 30;
+        double r = 0.6;
+        const char* graph_path = argv[1];
+        const char* exp_matrix_path = argv[2];
+        Testing::testInput(graph_path, exp_matrix_path, stop_step, r);
+    }
 
     //==========
     // TESTING
@@ -25,8 +47,6 @@ int main() {
     //Testing::testRandom(19354, 300, 608, 0.2);
     //bio-wormNet
     //Testing::testRandom(16347, 300, 47, 0.2);
-    //COG
-    Testing::testRandom(308518, 300, 204, 0.2);
 
     ///* Kernel 1 vs sequential *///
     //std::cout << "Kernel 1 vs sequential" << '\n';

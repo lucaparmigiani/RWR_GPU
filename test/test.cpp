@@ -76,7 +76,7 @@ namespace Testing {
         //readUtil::countLines(F_GRAPH_COO, nnz);
         readUtil::readGraphHeader(file_graph, N, nnz);
         GraphCSR graph_csr(N, nnz);
-        readUtil::readGraph(F_GRAPH_COO, &graph_csr);
+        readUtil::readGraph(file_graph, &graph_csr);
         graph_csr.info();
         graph_csr.ToCSR();
         //graph_csr.degreeAnalisys();
@@ -177,9 +177,10 @@ namespace Testing {
         //float densityGraph[] {0.01, 0.1, 0.2, 0.5, 0.7, 0.9};
         //double densityEM[] {0.01, 0.1, 0.2, 0.5, 0.7, 0.9};
         //int nof_nodes[] {1000, 2000, 5000, 10000, 20000};
-        int nof_nodes[] {1000, 2000};
-        float densityGraph[] {0.2, 0.5, 0.8};
-        double densityEM[] {0.1, 0.5, 0.8};
+        std::cout << "x" << '\n';
+        int nof_nodes[] {2000, 5000};
+        float densityGraph[] {0.2};
+        double densityEM[] {0.1};
         int M = 120;
         for (int i = 0; i < sizeof(nof_nodes)/sizeof(int); ++i) {
             for (int j = 0; j < sizeof(densityGraph)/sizeof(float); ++j) {
