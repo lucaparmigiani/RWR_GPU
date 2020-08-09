@@ -50,3 +50,18 @@ class GraphCSR : public Graph {
 		void print();
         static GraphCSR GetRandomGraph(int nof_nodes, int avg_degree);
 };
+
+class GraphEdgeList : public Graph {
+
+    public:
+		int2* COO_Edges;   //edgelist
+        int   *edgeU, *edgeV;
+		int   *nodes;
+        float *prob;
+
+        GraphEdgeList(); // need default constructor
+        GraphEdgeList(const int _V, const int _nnz);
+        GraphEdgeList(const int _V, std::vector<int2> edgeList);
+		void print();
+        static GraphEdgeList GetRandomGraph(int nof_nodes, int avg_degree);
+};

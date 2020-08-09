@@ -23,6 +23,7 @@ class ExpMatrix {
         ExpMatrix( const ExpMatrix & expMatrix);
 
         void info();
+        void print();
         void RWR (const double r, const int stop_step, Graph* graph);
 
         static ExpMatrix randomExpMatrix(int rows, int columns, double density);

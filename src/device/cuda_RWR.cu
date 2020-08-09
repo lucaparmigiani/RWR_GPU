@@ -10,27 +10,32 @@ void cudaExpMatrix::cudaRWR_N(int nof_tests, double r, int stop_step, Kernel k) 
         case K3:
             this->cudaRWR_Kernel3(r, stop_step);
            break;
-        case K3_5:
-            cudaDeviceProp devProp;
-            cudaGetDeviceProperties(&devProp, 0);
-            cudaError("Device Info");
-            size_t sharedMemSizePerBlock = devProp.sharedMemPerBlock;
-            size_t sharedMemSizePerSM = devProp.sharedMemPerMultiprocessor;
-            size_t numSM = devProp.major;
-            const int numPerSM = sharedMemSizePerSM/sharedMemSizePerBlock;
+        case K3_5: 
+           {
+                cudaDeviceProp devProp;
+                cudaGetDeviceProperties(&devProp, 0);
+                cudaError("Device Info");
+                size_t sharedMemSizePerBlock = devProp.sharedMemPerBlock;
+                size_t sharedMemSizePerSM = devProp.sharedMemPerMultiprocessor;
+                size_t numSM = devProp.major;
+                const int numPerSM = sharedMemSizePerSM/sharedMemSizePerBlock;
 
-            num_block = numPerSM*numSM;
-            BLOCK_DIM = MaxBlockDim;
+                num_block = numPerSM*numSM;
+                BLOCK_DIM = MaxBlockDim;
 #if   SMEM_KERNEL==0
-            this->cudaRWR_Kernel3(r, stop_step);
-            //this->cudaRWR_Kernel1(r, stop_step);
-#elif SMEM_KERNEL==1
-            if(sharedMemSizePerBlock/(numPerSM*2) - 10000 > this->V)
-                this->cudaRWR_Kernel5(r, stop_step);
-            else
                 this->cudaRWR_Kernel3(r, stop_step);
-            //this->cudaRWR_Kernel4(r, stop_step);
+                //this->cudaRWR_Kernel1(r, stop_step);
+#elif SMEM_KERNEL==1
+                if(sharedMemSizePerBlock/(numPerSM*2) - 10000 > this->V)
+                    this->cudaRWR_Kernel5(r, stop_step);
+                else
+                    this->cudaRWR_Kernel3(r, stop_step);
+                //this->cudaRWR_Kernel4(r, stop_step);
 #endif
+                break;
+            }
+        case K6:
+            this->cudaRWR_Kernel6(r, stop_step);
             break;
     }
     cudaError("RWR Kernel N");
@@ -54,7 +59,7 @@ void cudaExpMatrix::reset_gpu(){
 	cudaFree(this->devExpVec2);
 }
 
-// ---------------------k AUXILARY FUNCTION ---------------------------------------------
+// ---------------------- AUXILARY FUNCTION ---------------------------------------------
 
 inline void cudaExpMatrix::FrontierDebug(int FrontierSize, bool check) {
     int* F = new int[FrontierSize];

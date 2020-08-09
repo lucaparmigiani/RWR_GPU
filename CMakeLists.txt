@@ -31,6 +31,7 @@ include_directories(${PROJECT_SOURCE_DIR}/cub-1.4.0/
 
 set(HOST_SRC 	    ${PROJECT_SOURCE_DIR}/src/host/graph.cpp
                     ${PROJECT_SOURCE_DIR}/src/host/graphCSR.cpp
+                    ${PROJECT_SOURCE_DIR}/src/host/graphEdgeList.cpp
                     ${PROJECT_SOURCE_DIR}/src/host/graphAdjM.cpp
                     ${PROJECT_SOURCE_DIR}/src/host/expMatrix.cpp
                     ${PROJECT_SOURCE_DIR}/test/test.cpp

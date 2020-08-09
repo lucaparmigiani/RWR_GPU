@@ -26,6 +26,15 @@ void ExpMatrix::info(){
     std::cout << "Number of rows\t\t\t" << N << '\n';
 }
 
+void ExpMatrix::print() {
+    for (int i = 0; i < N; ++i) {
+        for (int j = 0; j < M; ++j) {
+            std::cout << eMatrix[i*M + j] << ' ';
+        }
+        std::cout << '\n';
+    }
+}
+
 // RWR with matrix multiplication
 //=========================================================================
 

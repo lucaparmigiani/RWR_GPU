@@ -24,6 +24,7 @@ using namespace timer;
 namespace Testing {
     void testRandom( int N, int M, int avg_degree, double densityEM, Kernel k=K3_5,
                 int stop_step=30, double r=0.6 );
+    void testRandomEdgeList(const char* file_graph, const char* file_expMat, int stop_step=30, double r=0.6 );
     void testInput(const char* file_graph, const char* file_expMat, int stop_step=30, double r=0.6 );
     void printPropExpMat(cudaExpMatrix& devExpMatrix, ExpMatrix& h_expMatrix);
     bool compareHostDev(cudaExpMatrix& devExpMatrix, ExpMatrix& h_expMatrix, bool printRes=false);

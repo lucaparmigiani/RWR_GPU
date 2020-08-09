@@ -156,6 +156,7 @@ namespace Testing {
         int N = h_expMatrix.N;
         int M = h_expMatrix.M;
         
+        std::cout << "HOST" << '\n';
         for (int i = 0 ; i < N ; ++i) {
             for (int j = 0 ; j < M ; ++j) {
                 std::cout <<std::setprecision(5) <<h_expMatrix.eMatrix[i*M + j]<< ' ';
@@ -164,11 +165,26 @@ namespace Testing {
         }
         std::cout <<'\n';
 
-        for (int j = 0 ; j < M ; ++j) {
+        std::cout << "CUDA";
+
+        bool transpose = true;
+        if (transpose) {
+            std::cout << "(transpose)" << '\n';
             for (int i = 0 ; i < N ; ++i) {
-                std::cout <<std::setprecision(5)<<devExpMatrix.expMatrix.eMatrix[j*N + i]<< ' ';
+                for (int j = 0 ; j < M ; ++j) {
+                    std::cout <<std::setprecision(5)<<devExpMatrix.expMatrix.eMatrix[j*N + i]<< ' ';
+                }
+                std::cout <<'\n';
             }
-            std::cout <<'\n';
+        }
+        else {
+            std::cout << '\n';
+            for (int j = 0 ; j < M ; ++j) {
+                for (int i = 0 ; i < N ; ++i) {
+                    std::cout <<std::setprecision(5)<<devExpMatrix.expMatrix.eMatrix[j*N + i]<< ' ';
+                }
+                std::cout <<'\n';
+            }
         }
     }
 
@@ -271,5 +287,84 @@ namespace Testing {
                   << "Speedup: " << TM_host.duration() / TM_device.duration()
                   << "x\n\n";
         }
+    }
+
+    void testRandomEdgeList(const char* file_graph, const char* file_expMat, int stop_step, double r ) {
+        Timer<DEVICE> TM_device;
+        Timer<HOST>   TM_host;
+
+        //==========================================================================
+        // INITIALIZATION
+        //==========================================================================
+        std::cout << "*****************************************+" << '\n';
+        int N=20000,M = 2;
+        int avg_degree = 2000;
+        
+        // -------------------------------------------------------------------------
+        // INIT INPUT GRAPH
+        // -------------------------------------------------------------------------
+        int nnz;
+        std::vector<int2> edgeList = Graph::randomEdgeList(N, avg_degree);
+        GraphEdgeList graph_edgeList = GraphEdgeList(N, edgeList);
+        GraphCSR graph_csr = GraphCSR(N, edgeList);
+        graph_edgeList.info();
+        //graph_edgeList.degreeAnalisys();
+        //graph_edgeList.print();
+        // -------------------------------------------------------------------------
+        // INIT RANDOM HOST EXPRESSION MATRIX
+        // -------------------------------------------------------------------------
+        double densityEM {0.5};
+        ExpMatrix h_expMatrix =  ExpMatrix::randomExpMatrix(N, M, densityEM);
+        h_expMatrix.info();
+        //h_expMatrix.print();
+        // -------------------------------------------------------------------------
+        // INIT DEVICE EXPRESSION MATRIX EDGE LIST
+        // -------------------------------------------------------------------------
+        cudaExpMatrix devExpMatrix(graph_csr, h_expMatrix, graph_edgeList);
+        devExpMatrix.transpose();
+
+//        // -------------------------------------------------------------------------
+//        // INIT DEVICE EXPRESSION MATRIX 
+//        // -------------------------------------------------------------------------
+//        cudaExpMatrix devExpMatrix(graph_csr, h_expMatrix);
+//        devExpMatrix.transpose();
+        //==========================================================================
+        // HOST PROPAGATION
+        //==========================================================================
+        TM_host.start();
+        h_expMatrix.RWR(r, stop_step, &graph_csr);
+        TM_host.stop();
+        
+        TM_host.print("RWR host:   ");
+
+        //==========================================================================
+        // CUDA PROPAGATION
+        //==========================================================================
+        std::cout << "\nRunning RWR cuda";
+
+        TM_device.start();
+        devExpMatrix.cudaRWR_N(1, r, stop_step, K6);
+        //devExpMatrix.cudaRWR_N(1, r, stop_step, K3);
+        TM_device.stop();
+
+        TM_device.print("RWR cuda: ");
+
+        //=========================================================================
+        // COMPARE
+        //=========================================================================
+
+        if (compareHostDev(devExpMatrix, h_expMatrix, false)) {
+            std::cout << "<> Correct" << '\n';
+            std::cout << std::setprecision(1)
+                  << "Speedup: " << TM_host.duration() / TM_device.duration()
+                  << "x\n\n";
+        }
+        for (int i = 0; i < N; ++i) {
+            if (graph_edgeList.degree[i] == 0) {
+                std::cout << "OCIO" << '\n';
+                break;
+            }
+        }
+
     }
 } 

@@ -12,6 +12,10 @@
 
 int main(int argc, char* argv[]) {
 
+    if (true) {
+    Testing::testRandomEdgeList(F_GRAPH_COO, F_EM);
+    }
+    else { 
     std::string errString(
 	"Syntax Error:\nRWR <graph_path> <expression_matrix_path>\n  or  \nRWR -T      do test on a random graph");
 
@@ -33,6 +37,7 @@ int main(int argc, char* argv[]) {
         const char* graph_path = argv[1];
         const char* exp_matrix_path = argv[2];
         Testing::testInput(graph_path, exp_matrix_path, stop_step, r);
+    }
     }
 
     //==========
